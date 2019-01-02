@@ -1,9 +1,9 @@
-/* 
+/*
  * Notifications *
  */
- 
-.url-highlighter {
-  link-color: $link_color; 
+
+ .url-highlighter {
+  link-color: $link_color;
 }
 
 .notification-banner {
@@ -12,44 +12,44 @@
   margin: $small_padding;
   border-radius: $pop_radius;
   color: $fg_color;
-  background-color: $bg_color;
-  box-shadow: $shadow_2; 
-  
-  &:hover, 
+  background-color: rgba($bg_color, 0.25);
+  box-shadow: $shadow_2;
+
+  &:hover,
   &:focus {
-    background-color: $bg_color; 
+    background-color: $bg_color;
   }
-  
+
   .notification-icon {
-    padding: 5px; 
+    padding: 5px;
   }
-  
+
   .notification-content {
     padding: $tiny_padding;
-    spacing: $tiny_padding; 
+    spacing: $tiny_padding;
   }
-  
+
   .secondary-icon {
-    icon-size: 1.09em; 
+    icon-size: 1.09em;
   }
-  
+
   .notification-actions {
     background-color: $bg_color;
     border-radius: $pop_radius;
     padding: $small_padding;
-    spacing: 1px; 
+    spacing: 1px;
   }
-  
+
   .notification-banner .notification-button {
     padding: 4px 4px 5px;
-    background-color: $bg_color; 
+    background-color: $bg_color;
     border-bottom-radius: $pop_radius;
     border: 0 solid $border_color;
     border-top-width: $border_size;
-  
-    &:hover, 
+
+    &:hover,
     &focus {
-      background-color: rgba($accent_color, 0.5); 
+      background-color: rgba($accent_color, 0.5);
     }
   }
 }
@@ -63,103 +63,103 @@
   -shell-counter-overlap-y: 3px;
   background-color: $fg_color;
   color: $bg_color;
-  border-radius: $circular_radius; 
+  border-radius: $circular_radius;
 }
 
 .secondary-icon {
-  icon-size: $small_icon_size; 
+  icon-size: $small_icon_size;
 }
 
 .chat-body {
-  spacing: $tiny_padding; 
+  spacing: $tiny_padding;
 }
 
 .chat-response {
-  margin: $tiny_padding; 
+  margin: $tiny_padding;
 }
 
 .chat-log-message {
-  color: $secondary_fg_color; 
+  color: $secondary_fg_color;
 }
 
 .chat-new-group {
-  padding-top: $standard_padding; 
+  padding-top: $standard_padding;
 }
 
 .chat-received {
-  padding-left: $tiny_padding; 
+  padding-left: $tiny_padding;
   &:rtl {
     padding-left: 0;
-    padding-right: $tiny_padding; 
+    padding-right: $tiny_padding;
   }
 }
 
 .chat-sent {
   padding-left: $large_padding;
-  color: $fg_color; 
+  color: $fg_color;
   &:rtl {
     padding-left: 0;
-    padding-right: $large_padding; 
+    padding-right: $large_padding;
   }
 }
 
 .chat-meta-message {
   padding-left: $tiny_padding;
   font-size: 9pt;
-  color: $fg_color; 
+  color: $fg_color;
   &:rtl {
     padding-left: 0;
-    padding-right: $tiny_padding; 
+    padding-right: $tiny_padding;
   }
 }
 
 .hotplug-transient-box {
   spacing: $small_padding;
-  padding: 2px 72px 2px 12px; 
+  padding: 2px 72px 2px 12px;
 }
 
 .hotplug-notification-item {
-  padding: $mini_padding $standard_padding; 
-  
+  padding: $mini_padding $standard_padding;
+
   &:focus {
-    padding: 1px 71px 1px 11px; 
+    padding: 1px 71px 1px 11px;
   }
 }
 
 .hotplug-notification-item-icon {
   icon-size: $standard_icon_size;
-  padding: $mini_padding $tiny_padding; 
+  padding: $mini_padding $tiny_padding;
 }
 
 .hotplug-resident-box {
-  spacing: 8px; 
+  spacing: 8px;
 }
 
 .hotplug-resident-mount {
   spacing: 8px;
-  border-radius: 4px; 
-  
+  border-radius: 4px;
+
   &:hover {
-    background-color: rgba(57, 63, 63, 0.3); 
+    background-color: rgba(57, 63, 63, 0.3);
   }
 }
 
 .hotplug-resident-mount-label {
   color: inherit;
-  padding-left: 6px; 
+  padding-left: 6px;
 }
 
 .hotplug-resident-mount-icon {
   icon-size: 24px;
-  padding-left: 6px; 
+  padding-left: 6px;
 }
 
 .hotplug-resident-eject-icon {
-  icon-size: 16px; 
+  icon-size: 16px;
 }
 
 .hotplug-resident-eject-button {
   padding: 7px;
   border-radius: 5px;
-  color: $error_color; 
+  color: $error_color;
 }

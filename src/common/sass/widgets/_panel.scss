@@ -1,31 +1,31 @@
-/* 
+/*
  * Panel *
  */
 
-#panel {
-  background-color: $panel_bg_color;
+ #panel {
+  background-color: rgba($panel_bg_color, 0.25);
   font-weight: bold;
-  height: $panel_size; 
+  height: $panel_size;
 
   &.unlock-screen, &.login-screen, &.lock-screen {
-    background-color: transparent; 
+    background-color: transparent;
   }
   #panelLeft, #panelCenter {
-    spacing: $mini_padding; 
+    spacing: $mini_padding;
   }
   .panel-corner {
     -panel-corner-radius: $pop_radius;
     -panel-corner-background-color: $panel_bg_color;
     -panel-corner-border-width: 2px;
-    -panel-corner-border-color: transparent; 
-  
+    -panel-corner-border-color: transparent;
+
     &:active, &:overview, &:focus {
-      -panel-corner-border-color: transparent; 
+      -panel-corner-border-color: transparent;
     }
     &.lock-screen, &.login-screen, &.unlock-screen {
       -panel-corner-radius: 0;
       -panel-corner-background-color: transparent;
-      -panel-corner-border-color: transparent; 
+      -panel-corner-border-color: transparent;
     }
   }
   .panel-button {
@@ -33,11 +33,11 @@
     -minimum-hpadding: 6px;
     font-weight: 700;
     color: $inverse_secondary_fg_color;
-  
+
     .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
-      margin-right: 4px; 
+      margin-right: 4px;
     }
     &:hover {
       color: $inverse_fg_color;
@@ -45,69 +45,69 @@
     &:active, &:overview, &:focus, &:checked {
       background-color: rgba(0, 0, 0, 0.01);
       box-shadow: inset 0 -2px 0px $accent_color;
-      color: white; 
-    
+      color: white;
+
       &:active > .system-status-icon, &:overview > .system-status-icon, &:focus > .system-status-icon, &:checked > .system-status-icon {
-        icon-shadow: black 0 2px 2px; 
+        icon-shadow: black 0 2px 2px;
       }
     }
     .system-status-icon {
       icon-size: 1.16em;
-      padding: 0 $tiny_padding; 
+      padding: 0 $tiny_padding;
     }
     .unlock-screen #panel &,
     .login-screen #panel &,
     .lock-screen #panel & {
-      color: $inverse_fg_color; 
-      
+      color: $inverse_fg_color;
+
       &:focus,
       &:hover,
       &:active {
-        color: $inverse_fg_color; 
+        color: $inverse_fg_color;
       }
     }
   }
   .panel-status-indicators-box,
   .panel-status-menu-box {
-    spacing: 2px; 
+    spacing: 2px;
   }
   .power-status.panel-status-indicators-box {
-    spacing: 0; 
+    spacing: 0;
   }
   .screencast-indicator {
-    color: $error_color; 
+    color: $error_color;
   }
   &.solid {
-    background-color: $panel_bg_color; 
-  
+    background-color: $panel_bg_color;
+
     .panel-corner {
-      -panel-corner-background-color: $panel_bg_color; 
+      -panel-corner-background-color: $panel_bg_color;
     }
     .panel-button {
-      color: $inverse_secondary_fg_color; 
-    
-      &:hover, 
-      &:active, 
-      &:overview, 
-      &:focus, 
+      color: $inverse_secondary_fg_color;
+
+      &:hover,
+      &:active,
+      &:overview,
+      &:focus,
       &:checked {
-        color: $inverse_fg_color; 
+        color: $inverse_fg_color;
       }
     }
     .system-status-icon,
     .app-menu-icon > StIcon,
     .popup-menu-arrow {
-      icon-shadow: none; 
+      icon-shadow: none;
     }
   }
 }
 
 #appMenu {
   spinner-image: url("assets/process-working.svg");
-  spacing: 4px; 
-  
+  spacing: 4px;
+
   .label-shadow {
-    color: transparent; 
+    color: transparent;
   }
 }
 
@@ -117,12 +117,12 @@
   width: 0px;
   height: 0px;
   background-color: transparent;
-  
+
   #appMenu & {
     width: 16px;
     height: 16px;
-  } 
-  
+  }
+
   .aggregate-menu & {
     width: 16px;
     height: 16px;
@@ -130,5 +130,5 @@
 }
 
 .popup-menu-icon {
-  icon-size: 1.09em; 
+  icon-size: 1.09em;
 }
